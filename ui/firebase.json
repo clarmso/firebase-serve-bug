@@ -8,8 +8,14 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "/",
         "destination": "/index.html"
+      },
+      {
+        "source": "/api/**",
+        "run": {
+          "serviceId": "firebase-serve-bug"
+        }
       }
     ]
   }
